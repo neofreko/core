@@ -111,7 +111,7 @@ updateCore() {
     
     # without this git merge fails on windows
     mv ./scripts/install-sdk.sh  './scripts/.#install-sdk-tmp.sh'
-    rm ./scripts/.install-sdk-tmp.sh 
+    rm ./scripts/install-sdk.sh 
     cp './scripts/.#install-sdk-tmp.sh' ./scripts/install-sdk.sh
     git checkout -- ./scripts/install-sdk.sh
 
